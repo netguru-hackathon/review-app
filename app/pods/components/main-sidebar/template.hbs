@@ -1,0 +1,16 @@
+<div class="pane pane-sm sidebar">
+  <nav class="nav-group">
+    <ul class="list-group">
+      <li class="list-group-header">
+        <input class="form-control" type="text" placeholder="Search project">
+      </li>
+    </ul>
+    <h5 class="nav-group-title">Projects</h5>
+    {{#each projects as |project|}}
+      {{#link-to 'project' project class='nav-group-item' }}
+        <span class="fa fa-github"></span>
+        {{project.name}}
+      {{/link-to}}
+    {{/each}}
+  </nav>
+</div>

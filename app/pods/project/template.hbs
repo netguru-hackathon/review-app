@@ -1,0 +1,18 @@
+<table class="table-striped demo-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>State</th>
+      <th>Github</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model.commits as |commit|}}
+      <tr>
+        <td>{{commit.message}}</td>
+        <td>{{commit.state}}</td>
+        <td>{{commit.remoteUrl}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
