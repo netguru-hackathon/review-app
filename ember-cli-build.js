@@ -27,5 +27,10 @@ module.exports = function(defaults) {
     destDir: 'fonts'
   });
 
-  return app.toTree(fontAwesomeAssets);
+  var photonAssets = funnel('vendor/photon', {
+    srcDir: 'fonts',
+    destDir: 'fonts'
+  });
+
+  return app.toTree([photonAssets, fontAwesomeAssets]);
 };
