@@ -1,3 +1,9 @@
 @import "photon";
 @import "commit";
 @import "main";
+
+.disabled {
+  pointer-events: none;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
