@@ -2,9 +2,9 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'review.app',
+    modulePrefix: 'review-app',
     environment: environment,
-    podModulePrefix: 'review.app/pods',
+    podModulePrefix: 'review-app/pods',
     locationType: 'hash',
     EmberENV: {
       FEATURES: {

@@ -1,7 +1,7 @@
 {
-  "name": "review.app",
+  "name": "review-app",
   "version": "0.0.0",
-  "description": "Small description for review.app goes here",
+  "description": "Small description for review-app goes here",
   "private": true,
   "directories": {
     "doc": "doc",
