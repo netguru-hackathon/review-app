@@ -20,10 +20,10 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
-    'min-width': 500,
-    'min-height': 300,
+    width: 1000,
+    height: 800,
+    'min-width': 600,
+    'min-height': 400,
     'accept-first-mouse': true,
     'title-bar-style': 'hidden'
   });
