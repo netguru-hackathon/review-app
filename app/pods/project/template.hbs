@@ -1,17 +1,26 @@
 <table class="table-striped demo-table">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Author</th>
+      <th>Message</th>
       <th>State</th>
-      <th>Github</th>
     </tr>
   </thead>
   <tbody>
     {{#each model.commits as |commit|}}
       <tr>
+        <td>
+          <img src='{{commit.author.imageUrl}}' class='img-circle author-avatar'>
+          <span>{{commit.author.name}}</span>
+        </td>
         <td>{{commit.message}}</td>
-        <td>{{commit.state}}</td>
-        <td>{{commit.remoteUrl}}</td>
+        <td>
+          {{#if commit.hasExpiration}}
+            expires {{time-relative commit.expiresAt}}
+          {{else}}
+            {{commit.state}}
+          {{/if}}
+        </td>
       </tr>
     {{/each}}
   </tbody>

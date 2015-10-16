@@ -48,7 +48,7 @@ module.exports = function(environment) {
     'script-src': "'self' 'unsafe-inline' ",
     'font-src': "'self' http://fonts.gstatic.com",
     'connect-src': "'self' http://review.dev",
-    'img-src': "'self' data: *.googleusercontent.com",
+    'img-src': "'self' data: *.googleusercontent.com https://www.gravatar.com",
     'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
     'media-src': "'self'"
   };
