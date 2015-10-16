@@ -8,6 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('main', { path: '/' }, function() {
     this.route('project', { path: '/:name', resetNamespace: true });
+    this.route('commit', { path: 'commit/:id', resetNamespace: true });
   });
 });
 
