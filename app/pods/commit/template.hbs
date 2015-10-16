@@ -8,6 +8,26 @@
   </div>
 </div>
 
+<header class="toolbar toolbar-header">
+  <div class="toolbar-actions text-center">
+    <div class="btn-group">
+      <button class="btn btn-large btn-negative reject-btn">
+        <span class="fa fa-meh-o"></span>
+        reject
+      </button>
+      <button class="btn btn-large btn-warning pass-btn">
+        <span class="fa fa-dot-circle-o"></span>
+        pass
+      </button>
+      <button class="btn btn-large btn-positive accept-btn">
+        <span class="fa fa-diamond"></span>
+        accept
+      </button>
+    </div>
+  </div>
+</header>
+
 <div class='github-webview-wrapper'>
   <webview src="{{model.remoteUrl}}"></webview>
 </div>
+

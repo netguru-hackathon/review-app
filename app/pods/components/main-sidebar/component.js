@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     if (Ember.isEmpty(term)) {
       return this.get('projects');
     } else {
-      return this.get('projects').filter(function(item, index, enumerable) {
+      return this.get('projects').filter(function(item) {
         return item.get('name').startsWith(term);
       });
     }
