@@ -1,14 +1,18 @@
 <nav class="nav-group">
   <ul class="list-group">
     <li class="list-group-header">
-      <input class="form-control" type="text" placeholder="Search project">
+      {{input value=term placeholder='Search project' class='form-control'}}
     </li>
   </ul>
   <h5 class="nav-group-title">Projects</h5>
-  {{#each projects as |project|}}
+  {{#each filteredProjects as |project|}}
     {{#link-to 'project' project class='nav-group-item' }}
       <span class="fa fa-github"></span>
       {{project.name}}
     {{/link-to}}
+  {{else}}
+    <div class="nav-group-item">
+      No project found: {{term}}
+    </div>
   {{/each}}
 </nav>
