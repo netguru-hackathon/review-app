@@ -1,0 +1,13 @@
+<div class="tab-group">
+  <div class="tab-item" {{action 'gotoProject'}}>
+    {{model.project.name}}
+  </div>
+  <div class="tab-item active">
+    <span class="icon icon-cancel icon-close-tab" {{action 'gotoProject'}}></span>
+    [{{model.shortHash}}] {{model.message}}
+  </div>
+</div>
+
+<div class='github-webview-wrapper'>
+  <webview src="{{model.remoteUrl}}"></webview>
+</div>
