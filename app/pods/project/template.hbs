@@ -8,7 +8,7 @@
   </thead>
   <tbody>
     {{#each model.commits as |commit|}}
-      <tr {{action 'show'}}>
+      <tr {{action 'show' commit}}>
         <td>
           <img src='{{commit.author.imageUrl}}' class='img-circle author-avatar'>
           <span>{{commit.author.name}}</span>
